@@ -1,0 +1,28 @@
+<!-- Without Bootstrap Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+</head>
+<body>
+    <!-- Hello {{name}} to our {{field}}. -->
+    <h1>Welcome To The Text Analyzer. Enter Your Text Below.</h1>
+    <form action="/analyze" method="get">
+        <textarea name='text' style="width: 748px; height: 114px;"></textarea>
+        <br>
+        <input type="radio" name="remove_punc">Remove Punctuations
+        <br>
+        <input type="radio" name="fullcaps">UPPERCASE
+        <br>
+        <input type="radio" name="remove_new_lines">Remove New Lines
+        <br>
+        <input type="radio" name="remove_extra_spaces">Remove Extra Spaces
+        <br>
+        <input type="radio" name="count_chars">Count No. Of Characters
+        <br><br>
+        <button type="submit">Analyze The Text</button>
+    </form>
+</body>
+</html>
